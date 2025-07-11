@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) {
+  /* 1. Основной контейнер: две колонки, прижать кверху */
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 60px;
+    height: auto; /* высота по содержимому */
+  }
+
+  /* 2. Текстовый блок */
+  .text-content {
+    flex: 1;
+    margin-top: 0;       /* сброс любых отступов */
+    padding-right: 40px;
+  }
+
+  /* 3. Блок с изображением */
+  .image-content {
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  /* 4. Скрыть мобильное меню (если есть) */
+  .burger-wrapper {
+    display: none;
+  }
+}

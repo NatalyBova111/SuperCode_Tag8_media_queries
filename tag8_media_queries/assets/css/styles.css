@@ -1,0 +1,156 @@
+/* . Сброс базовых стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Подключение шрифта Raleway */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+/* 3. Основные настройки body */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #111;
+  padding: 20px;
+}
+
+/* 4. Блок «DIETER RAMS» */
+.intro-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px 0;
+}
+.intro-block .intro {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+/* 5. Контейнер основного контента (мобильный вид) */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 6. Текстовый блок */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-content .title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.text-content .description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 7. Блок с изображением */
+.image-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+/* оверлей для номера страницы */
+.page-number-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.page-number {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.page-number span {
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 4px;
+  color: black;
+}
+
+/* 8. Футер */
+.site-footer {
+  background-color: #f4f4f4;
+  font-family: 'Raleway', sans-serif;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid #eee;
+}
+.footer-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+/* соцсети */
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+.footer-social .social-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+}
+/* стрелки */
+.footer-nav {
+  justify-content: center;
+}
+.footer-nav .arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin: 0 15px;
+  cursor: pointer;
+  color: #111;
+  padding: 5px;
+}
+.footer-nav .next {
+  background: #111;
+  color: #fff;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+/* подпись */
+.footer-info {
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-info .tagline {
+  font-weight: bold;
+  font-size: 14px;
+  color: #111;
+}
+.footer-info .author {
+  font-size: 12px;
+  color: #666;
+}
